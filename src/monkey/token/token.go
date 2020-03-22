@@ -36,17 +36,17 @@ const (
 	RBRACE    = "}"
 
 	// keywords
-	FUNCTION = "FN"
-	LET      = "LET"
-	TRUE     = "TRUE"
-	FALSE    = "FALSE"
-	IF       = "IF"
-	ELSE     = "ELSE"
-	RETURN   = "RETURN"
+	FN     = "FN"
+	LET    = "LET"
+	TRUE   = "TRUE"
+	FALSE  = "FALSE"
+	IF     = "IF"
+	ELSE   = "ELSE"
+	RETURN = "RETURN"
 )
 
 var keywords = map[string]TokenType{
-	"fn":     FUNCTION,
+	"fn":     FN,
 	"let":    LET,
 	"true":   TRUE,
 	"false":  FALSE,
