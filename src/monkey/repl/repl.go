@@ -8,8 +8,8 @@ import (
 	"monkey/parser"
 )
 
-const PROMPT = "🐵> " // monkey see, monkey do
-const ERR_PROMPT = "\t🐒! "
+const PROMPT = "🐵> "      // monkey see, monkey do
+const ERR_PROMPT = "\t🐒 " // clever imp
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
