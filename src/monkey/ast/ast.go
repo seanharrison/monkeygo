@@ -130,8 +130,22 @@ type Identifier struct {
 func (i *Identifier) TokenLiteral() string {
 	return i.Token.Literal
 }
-func (i *Identifier) expressionNode() {}
-
 func (i *Identifier) String() string {
 	return i.Value
 }
+func (i *Identifier) expressionNode() {}
+
+// IntegerLiteral
+
+type IntegerLiteral struct {
+	Token token.Token // token.IDENT
+	Value int64
+}
+
+func (i *IntegerLiteral) TokenLiteral() string {
+	return i.Token.Literal
+}
+func (i *IntegerLiteral) String() string {
+	return i.Token.Literal
+}
+func (i *IntegerLiteral) expressionNode() {}
